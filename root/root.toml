@@ -3,7 +3,7 @@ rollFormula = "2d6"
 
 # Define roll result ranges.
 [rollResults]
-	[rollResults.success]
+  [rollResults.success]
     range = "10-12"
     label = "Strong Hit!"
   [rollResults.partial]
@@ -29,7 +29,7 @@ rollFormula = "2d6"
 
   # Define attributes.
   [character.attributesTop]
-  	[character.attributesTop.reputation]
+    [character.attributesTop.reputation]
       type = "ListMany"
       label = "YOUR REPUTATION"
       condition = false
@@ -80,7 +80,7 @@ rollFormula = "2d6"
 
   # Define sidebar details.
   [character.attributesLeft]
-  	[character.attributesLeft.resource]
+    [character.attributesLeft.resource]
       type = "ListMany"
       label = " "
       condition = false
@@ -140,7 +140,7 @@ rollFormula = "2d6"
     [npc.attributesTop.injury]
         type = "Resource"
         label = "Injury"
-		[npc.attributesTop.exhaustion]
+    [npc.attributesTop.exhaustion]
       type = "Resource"
       label = "Exhaustion"
     [npc.attributesTop.wear]
@@ -148,7 +148,7 @@ rollFormula = "2d6"
       label = "Wear"
       
   [npc.attributesLeft]
-  	[npc.attributesLeft.morale]
+    [npc.attributesLeft.morale]
         type = "Number"
         label = "Morale"
     [npc.attributesLeft.harm]
