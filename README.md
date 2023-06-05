@@ -36,4 +36,8 @@ The following Foundry VTT module must be installed: [Custom CSS](https://foundry
 
 ## Current PbtA games included
 
-- Root (*CSS file must be included for sheet to function*)
+### Root
+
+**IMPORTANT!** CSS file must be included for sheet to function*
+
+![alt text](https://raw.githubusercontent.com/gonzaPaEst/pbta-toml-repo/main/root/root-actor-sheet.webp "Root actor sheet")
