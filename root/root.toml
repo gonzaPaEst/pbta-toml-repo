@@ -1,0 +1,167 @@
+# Configure Rolls
+rollFormula = "2d6"
+
+# Define roll result ranges.
+[rollResults]
+	[rollResults.success]
+    range = "10-12"
+    label = "Strong Hit!"
+  [rollResults.partial]
+    range = "7-9"
+    label = "Weak Hit"
+  [rollResults.failure]
+    range = "6-"
+    label = "Miss"
+
+########################################
+## CHARACTERS ##########################
+########################################
+# Define the character group.
+[character]
+
+  # Define stats.
+  [character.stats]
+    charm = "Charm"
+    cunning = "Cunning"
+    finesse = "Finesse"
+    luck = "Luck"
+    might = "Might"
+
+  # Define attributes.
+  [character.attributesTop]
+  	[character.attributesTop.reputation]
+      type = "ListMany"
+      label = "YOUR REPUTATION"
+      condition = false
+      options = [
+        "[Text]|0",
+        "-3|4",
+        "-2|4",
+        "-1|4",
+        "+0|1",
+        "+1|6",
+        "+2|6",
+        "+3|6",
+        "[Text]|0",
+        "-3|4",
+        "-2|4",
+        "-1|4",
+        "+0|1",
+        "+1|6",
+        "+2|6",
+        "+3|6",
+        "[Text]|0",
+        "-3|4",
+        "-2|4",
+        "-1|4",
+        "+0|1",
+        "+1|6",
+        "+2|6",
+        "+3|6",
+        "[Text]|0",
+        "-3|4",
+        "-2|4",
+        "-1|4",
+        "+0|1",
+        "+1|6",
+        "+2|6",
+        "+3|6",
+        "[Text]|0",
+        "-3|4",
+        "-2|4",
+        "-1|4",
+        "+0|1",
+        "+1|6",
+        "+2|6",
+        "+3|6",
+        "---------------NOTORIETY--------------|0",
+        "-------------------------PRESTIGE---------------------------|0"
+      ]
+
+  # Define sidebar details.
+  [character.attributesLeft]
+  	[character.attributesLeft.resource]
+      type = "ListMany"
+      label = " "
+      condition = false
+      options = [
+        "INJURY|0",
+        "|4",
+        "|8",
+        "EXHAUSTION|0",
+        "|4",
+        "|8",
+        "DEPLETION|0",
+        "|4",
+        "|8"
+      ]
+    [character.attributesLeft.value]
+      type = "Number"
+      label = "Equipment & Load"
+      description = "Starting Value"
+    [character.attributesLeft.carrying]
+      type = "Number"
+      label = "Carrying"
+    [character.attributesLeft.burdened]
+      type = "Number"
+      label = "Burdened (4+Might)"
+    [character.attributesLeft.max]
+      type = "Number"
+      label = "Max (Twice Burdened)"
+    [character.attributesLeft.nature]
+      type = "LongText"
+      label = "Nature"
+    [character.attributesLeft.drives]
+      type = "LongText"
+      label = "Drives"
+    [character.attributesLeft.connections]
+      type = "LongText"
+      label = "Connections"
+    
+  # Define groups for moves.
+  [character.moveTypes]
+    basic = "Basic Moves"
+    playbook = "Playbook Moves"
+    weapon = "Weapon Moves"
+    travel = "Travel Moves"
+    reputation = "Reputation Moves"
+
+  # Define groups for equipment.
+  [character.equipmentTypes]
+    equipment = "Equipment"
+    
+########################################
+## NPCS ################################
+########################################
+# Define stats.
+[npc]
+  # Define attributes.
+  [npc.attributesTop]
+    [npc.attributesTop.injury]
+        type = "Resource"
+        label = "Injury"
+		[npc.attributesTop.exhaustion]
+      type = "Resource"
+      label = "Exhaustion"
+    [npc.attributesTop.wear]
+      type = "Resource"
+      label = "Wear"
+      
+  [npc.attributesLeft]
+  	[npc.attributesLeft.morale]
+        type = "Number"
+        label = "Morale"
+    [npc.attributesLeft.harm]
+        type = "Text"
+        label = "Harm Dealt"
+    [npc.attributesLeft.drive]
+        type = "LongText"
+        label = "Drive"
+
+  # Define logical groups for moves.
+  [npc.moveTypes]
+    moves = "Moves"
+    
+  # Define groups for equipment.
+  [npc.equipmentTypes]
+    equipment = "Equipment"
