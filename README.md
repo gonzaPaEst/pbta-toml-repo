@@ -27,7 +27,7 @@ The following Foundry VTT module must be installed: [Custom CSS](https://foundry
 
 ### CSS
 
-1. Open the Manage Modules window (under Game Settints) and activate the Custom CSS module.
+1. Open the Manage Modules window (under Game Settings) and activate the Custom CSS module.
 2. Open the Custom CSS Rules window (under Game Settings > Configure Settings > Custom CSS).
 3.  Go to the sheet's folder on this GitHub repository and open the .css file.
 4. Copy-paste the CSS code into the Global Styles within the Custom CSS Rules window.
